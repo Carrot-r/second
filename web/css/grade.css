@@ -1,0 +1,247 @@
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font: 12px "宋体", "Arial Narrow", HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #2d374b;
+    text-decoration: none
+}
+
+a:hover {
+    color: #cd0200;
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*以上为腾讯qq官网页面初始化*/
+
+/*测试部分*/
+#top,#header,#nav,#star,#serve,#footer{
+    height: 100px;
+    width: 100%;
+    /*border: 1px solid black;*/
+}
+.container{
+    /*页面缩小后样式不会缩小*/
+    /*width: 76%;*/
+    width: 1000px;
+    /*border: 1px solid #f00;*/
+    margin: 0 auto;
+}
+#top{
+    height: 5px;
+    background: #00925F;
+}
+#header{
+    height: 30px;
+    background: #2D2D2D;
+}
+#header .xlwb{
+    width: 20px;
+    height: 17px;
+    background: url("../image/icons.png") no-repeat -47px -95px;
+}
+#header .txwb{
+    width: 20px;
+    height: 20px;
+    background: url("../image/icons.png") no-repeat -27px -92px;
+}
+#header .qq{
+    color: #17925F;
+}
+#header .header_left div{
+    float: left;
+    margin: 6px 10px 0 10px;
+}
+/*#header ul{*/
+/*    width: 416px;*/
+/*}*/
+#header ul li{
+    float: left;
+    margin: 6px 3px 0 3px;
+    line-height: 18px;
+}
+#header li a{
+    color: #B2B2B2;
+    font-size: 14px;
+    border-right: 1px solid #B2B2B2 ;
+    /*内边距是内容与边框之间的距离*/
+    padding: 0 18px 0 15px;
+}
+#header li a:hover{
+    color: #00925F;
+    text-decoration: none;
+}
+#header .com a{
+    border: none;
+    padding-left: 8px;
+    /*vertical-align: middle;*/
+}
+#header .com span{
+    width: 18px;
+    height: 18px;
+    /*因为行内元素不能设置宽度和高度，所以设置成行内块*/
+    display: inline-block;
+    /*图片显示位置 垂直居中*/
+    vertical-align: middle;
+    background: url("../image/login_ico.png") no-repeat -164px -86px;
+    margin-left: 10px;
+}
+#nav{
+    height: 80px;
+    background: #919187;
+}
+#nav img{
+    border-radius: 50px;
+    margin-left: 10px;
+}
+#nav li{
+    float: left;
+    line-height: 80px;
+    text-align: center;
+    width: 120px;
+}
+#nav li a{
+    font-size: 20px;
+    color:#ececeb;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+#nav li :hover{
+    background-color: green ;
+}
+#nav a:hover{
+    color: pink;
+}
+
+#star{
+    margin-top: 10px;
+    /*height: 975px;*/
+}
+
+#star .aside{
+    width: 290px;
+    margin-right: 10px;
+    height: 500px;
+    float: left;
+    /*background: #6cf;*/
+    background: url("../img/girl.jpg") center center;
+}
+#star .content{
+    float: right;
+    width: 700px;
+    margin-bottom: 5px;
+    /*height: 500px;*/
+    /*background: #cff;*/
+    background: url("../img/sky.jpg") center center;
+}
+
+#star .top{
+    width: auto;
+    height: 40px;
+    /*border: 1px dashed black;*/
+}
+#star h3{
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 27px;
+    color: red;
+    text-shadow: 2px 2px 5px yellow;
+}
+#star .picture{
+    width: 300px;
+    height: 210px;
+    margin: 5px 20px 20px 25px;
+    float: left;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+#star .picture:hover{
+    transform:rotateY(180deg);
+}
+#star img{
+    width: 300px;
+    height: 210px;
+    box-shadow:5px 5px 13px darkgrey;
+    position: absolute;
+}
+#star .after{
+    width: 300px;
+    height: 210px;
+    background-color: white;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+#star .after h2{
+    color: red;
+    text-align: center;
+    line-height: 210px;
+}
+#footer{
+    height: 40px;
+    background: #2D2D2D;
+    /*上面的主体部分是浮动的，防止footer移上去占据的空位，要清除两边的浮动*/
+    clear: both;
+    /*margin-top: 5px;*/
+}
+#footer p{
+    line-height: 40px;
+    /*margin-left: 100px;*/
+}
+#footer p span{
+    color: #aaa;
+    font-size: 13px;
+    /*margin-bottom: 0 ;*/
+}
+#footer li a{
+    line-height: 40px;
+    float: right;
+    color: floralwhite;
+    font-size: 13px;
+    margin:0 10px ;
+}
+#footer li a:hover{
+    text-decoration: none;
+    color: #00925F;
+}
+
+
+
+
+
